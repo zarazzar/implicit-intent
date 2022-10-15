@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/et_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert link"
+        />
+    <Button
+        android:id="@+id/btn_buka_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_website"
+        android:text="BUKA WEBSITE"
+        />
+
+    <EditText
+        android:id="@+id/et_lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jembatan Ampera"
+        android:layout_below="@id/btn_buka_website"
+        />
+    <Button
+        android:id="@+id/btn_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_lokasi"
+        android:text="BUKA LOKASI"
+        />
+
+
+    <EditText
+        android:id="@+id/et_bagitext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tekan Apa Saja"
+        android:layout_below="@id/btn_lokasi"
+        />
+    <Button
+        android:id="@+id/btn_bagitext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_bagitext"
+        android:text="BAGIKAN TEXT" />
+
+
+
+
+</RelativeLayout>
