@@ -10,7 +10,8 @@
         android:id="@+id/et_website"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="insert link"
+        android:hint="insert link"
+
         />
     <Button
         android:id="@+id/btn_buka_website"
@@ -24,7 +25,7 @@
         android:id="@+id/et_lokasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jembatan Ampera"
+        android:hint="Jembatan Ampera"
         android:layout_below="@id/btn_buka_website"
         />
     <Button
@@ -40,7 +41,7 @@
         android:id="@+id/et_bagitext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tekan Apa Saja"
+        android:hint="Tekan Apa Saja"
         android:layout_below="@id/btn_lokasi"
         />
     <Button
