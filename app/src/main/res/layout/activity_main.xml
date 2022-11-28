@@ -25,9 +25,8 @@
         android:id="@+id/et_lokasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Jembatan Ampera"
         android:layout_below="@id/btn_buka_website"
-        />
+        android:hint="Jembatan Ampera" />
     <Button
         android:id="@+id/btn_lokasi"
         android:layout_width="wrap_content"
@@ -51,6 +50,13 @@
         android:layout_below="@id/et_bagitext"
         android:text="BAGIKAN TEXT" />
 
+    <Button
+        android:id="@+id/btn_pindah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pindah"
+        android:layout_centerInParent="true"
+/>
 
 
 

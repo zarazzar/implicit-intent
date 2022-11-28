@@ -15,11 +15,13 @@ public class MainActivity extends AppCompatActivity
 {
 
         EditText etWebsite, etLokasi, etText;
-        Button btnWebsite ,btnLokasi, btnText;
+        Button btnWebsite ,btnLokasi, btnText ,btnPindah;
         protected void onCreate(Bundle savedInstanceState) {
-            getSupportActionBar().setTitle("Implicit Cuba cuba");
+            //getSupportActionBar().setTitle("Implicit Cuba cuba");
+            getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnPindah = findViewById(R.id.btn_pindah);
 
         btnWebsite = findViewById(R.id.btn_buka_website);
         etWebsite = findViewById(R.id.et_website);
@@ -33,21 +35,6 @@ public class MainActivity extends AppCompatActivity
         btnWebsite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                String url = etWebsite.getText().toString();
-//                Intent inten = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-//                startActivity(inten);
-
-//               if (etText.equals(""))
-//               {
-//                  Toast.makeText(MainActivity.this,"Link Harus Di Isi",Toast.LENGTH_SHORT).show();
-//               }
-//               else
-//               {
-//                   String link = etWebsite.getText().toString();
-//                   Uri urilink = Uri.parse(link);
-//                   Intent bukaWebsite = new Intent(Intent.ACTION_VIEW, urilink);
-//                   startActivity(bukaWebsite);
-//               }
                 String link = etWebsite.getText().toString();
                 Uri urilink = Uri.parse(link);
                 Intent bukaWebsite = new Intent(Intent.ACTION_VIEW, urilink);
@@ -82,6 +69,14 @@ public class MainActivity extends AppCompatActivity
                         .setChooserTitle("Bagikan Teks ini")
                         .setText(teks)
                         .startChooser();
+            }
+        });
+
+        btnPindah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Intent pindah = new Intent(MainActivity.this,secondActivity.class);
+                    startActivity(pindah);
             }
         });
     }
